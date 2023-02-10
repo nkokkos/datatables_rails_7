@@ -10,7 +10,7 @@ At the root of this rails app run:
  
 `foreman start -f Procfile.dev` to run the server at http://0.0.0.0:3003
 
-Needed to add this to config/initializers/assets.gr
+Needed to add the following to config/initializers/assets.rb
 
 `Rails.application.config.assets.paths << Rails.root.join("node_modules/datatables.net-bs4/css")`
 
