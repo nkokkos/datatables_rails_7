@@ -1,13 +1,13 @@
 if (window.jquery) {
- console.log("jquery loaded");
+  console.log("jquery loaded");
 } else {
-console.log("jquery NOT loaded");
+  console.log("jquery NOT loaded");
 }
 
 $(document).ready(function () {
   //$('#example').DataTable();
   $("#example").DataTable({
-    mark: true // used by https://yarnpkg.com/package/datatables.mark.js
+    mark: true   //mark: true is used by https://yarnpkg.com/package/datatables.mark.js
   });
 
 });
