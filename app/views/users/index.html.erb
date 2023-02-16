@@ -1,0 +1,32 @@
+<h4> Rails version:<%= Rails.version%> + datatables.net-bs4 + datatables.mark.js + esbuild + bootstrap@4.6.1 </h4>
+
+<p id="notice"><%= notice %></p>
+
+<h1>Users with AJAX Based server</h1>
+
+<h2>
+  class for this table: datatable responsive table-hover table table-striped table-bordered row-border order-column
+</h2>
+
+</br>
+
+<table id="example_3" class="datatable responsive table-hover table table-striped table-bordered row-border order-colum" data-url: "<%=users_path(format: :json)%>" >
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Phone number</th>
+      <th>created_at</th>
+      <th>updated_at</th>
+      <th>Choose you action:</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+
+<%= link_to 'New User', new_user_path %>
+
+
+
+
