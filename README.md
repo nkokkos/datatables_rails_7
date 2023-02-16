@@ -10,6 +10,11 @@ At the root of this rails app run:
  
 `foreman start -f Procfile.dev` to run the server at http://0.0.0.0:3003
 
+ http://127.0.0.1:3003 & http://127.0.0.3:3003/users
+
+ ![](doc/datatables.png)
+
+
 Needed to add the following to config/initializers/assets.rb
 
 `Rails.application.config.assets.paths << Rails.root.join("node_modules/datatables.net-bs4/css")`
