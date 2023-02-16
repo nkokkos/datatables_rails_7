@@ -7,7 +7,11 @@ At the root of this rails app run:
 `yarn install` to install the node dependencies
 
 `bundle install` to install the rails dependencies
- 
+
+`rails db:migrate` to migrate the simple database
+
+`rails db:seed` to use faker to load sample data
+
 `foreman start -f Procfile.dev` to run the server at http://0.0.0.0:3003
 
  http://127.0.0.1:3003 (not ajax server based)
