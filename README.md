@@ -1,6 +1,6 @@
 # README
 
-This is a working example of Rails 7 with datatables, bootstrap4 and esbuild. Not ajax based.
+This is a working example of Rails 7 with datatables, bootstrap4 and esbuild.
 
 At the root of this rails app run:
 
@@ -10,8 +10,8 @@ At the root of this rails app run:
  
 `foreman start -f Procfile.dev` to run the server at http://0.0.0.0:3003
 
- http://127.0.0.1:3003 & http://127.0.0.3:3003/users
-
+ http://127.0.0.1:3003 (not ajax server based)
+ http://127.0.0.3:3003/users (ajax server based)
  ![](doc/datatables.png)
 
 
@@ -23,3 +23,5 @@ Needed to add the following to config/initializers/assets.rb
 https://datatables.net/forums/discussion/71158/rails-7-with-esbuild-how-to-install-datatables
 
 https://datatables.net/examples/styling/bootstrap4.html
+
+https://github.com/driftingruby/082-datatables
