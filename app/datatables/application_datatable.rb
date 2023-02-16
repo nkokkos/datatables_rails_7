@@ -26,7 +26,14 @@ private
   end
 
   def sort_column
-    columns[params.slice(:order).permit!.to_h.dig('order','0','column').to_i]
+  # this code from https://github.com/driftingruby/082-datatables/blob/master/app/datatables/application_datatable.rb#L29
+  # columns[params[:order]['0'][:column].to_i]
+  # does not seem to work here. Trying to get the nested hash value returns an error. 
+  # The order parameter from datatables get action looks like this:
+  # "order"=>{"0"=>{"column"=>"0", "dir"=>"asc"}}
+  # Since I use ruby 3.1.x, I changed the code to this since it has to do with unpermitted parameters
+  columns[params.slice(:order).permit!.to_h.dig('order','0','column').to_i]
+  
   end
 
   def sort_direction
