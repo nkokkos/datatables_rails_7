@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@coreui/coreui@3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@coreui/coreui/-/coreui-3.4.0.tgz#3e3627a1f48a00f6289204a23f71eaa6ea94e370"
+  integrity sha512-WqzockdWVkXUNmNwlqdu+AxM+9JoiWGe4rKaySu/dZme1NvVOn2ukjJlpTkssal8UKcSHyitzNixtkMCmUxE1A==
+
 "@esbuild/android-arm64@0.17.7":
   version "0.17.7"
   resolved "https://registry.yarnpkg.com/@esbuild/android-arm64/-/android-arm64-0.17.7.tgz#7d22b442815624423de5541545401e12a8d474d8"
@@ -189,10 +194,27 @@ datatables.mark.js@^2.1.0:
     jquery ">=1.10"
     mark.js ">=6.1.0"
 
-datatables.net-bs4@^1.13.2:
+datatables.net-bs4@>=1.12.1, datatables.net-bs4@^1.13.2:
   version "1.13.2"
   resolved "https://registry.yarnpkg.com/datatables.net-bs4/-/datatables.net-bs4-1.13.2.tgz#681b77d5dfd755019dd1266aa8fa69ca2c2513b7"
   integrity sha512-sr5D4pV+VqIfPGPh3oKQDu+denk/bZ3ObyAYp/EbQLoLw2U6dvVJifHeccCC5M+ZhYtucHVID/qpbswx90QQHA==
+  dependencies:
+    datatables.net ">=1.12.1"
+    jquery ">=1.7"
+
+datatables.net-responsive-bs4@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/datatables.net-responsive-bs4/-/datatables.net-responsive-bs4-2.4.0.tgz#4f4b3bc09a1f403baf9153067a49d9de66ad6f39"
+  integrity sha512-zCAxwcuaLneJd3Yy1eKZU3wksIj4IFvcaQEXrFeVBgsl6iH3H+uqW9apwdadDL8agsBHdsln08qYjkz8bYY7Bg==
+  dependencies:
+    datatables.net-bs4 ">=1.12.1"
+    datatables.net-responsive ">=2.3.0"
+    jquery ">=1.7"
+
+datatables.net-responsive@>=2.3.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/datatables.net-responsive/-/datatables.net-responsive-2.4.0.tgz#91658679483e3ef6cda8b9bc5c1b7eff076a8e70"
+  integrity sha512-Acws4aEPJZX/+CQsXpuDBHfrwgl3XxWEc/zlsnJCXE/GGbqjVAtQt7SM6EBcdReMv1FbyWUlF/Uw+de11NT46A==
   dependencies:
     datatables.net ">=1.12.1"
     jquery ">=1.7"
@@ -294,6 +316,11 @@ normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
+
+perfect-scrollbar@^1.5.0:
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/perfect-scrollbar/-/perfect-scrollbar-1.5.5.tgz#41a211a2fb52a7191eff301432134ea47052b27f"
+  integrity sha512-dzalfutyP3e/FOpdlhVryN4AJ5XDVauVWxybSkLZmakFE2sS3y3pc4JnSprw8tGmHvkaG5Edr5T7LBTZ+WWU2g==
 
 picomatch@^2.0.4, picomatch@^2.2.1:
   version "2.3.1"

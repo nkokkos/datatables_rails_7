@@ -73,3 +73,8 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+
+gem "faker", "~> 3.1"
+
+gem 'kaminari'
